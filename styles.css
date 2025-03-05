@@ -14,6 +14,20 @@
     }
 }
 
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(60%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+  transition: all 1s;
+}
+
 /* Estilo do container do scroll */
 .scroll-container {
     width: 100%;
@@ -49,11 +63,28 @@
     width:100%;
 }
 
+.botao-idioma{
+  background-color: transparent;
+  border: none;
+}
+
+.project-cards{
+}
+
+.navbar-direita{
+  display: flex;
+  gap: 16px;
+}
+
 .estilonav{
     background: rgba(255, 193, 7, 0.9) !important;
 box-shadow: 0 8px 32px 0 rgba(40, 40, 40, 0.37) !important;
 backdrop-filter: blur( 15.5px ) !important;
 -webkit-backdrop-filter: blur( 15.5px ) !important;
+}
+
+.texto-paragrafo{
+  color: rgb(197, 197, 197) !important;
 }
 
 .texto{
